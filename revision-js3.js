@@ -15,7 +15,7 @@ document.getElementById('calcBtn').addEventListener('click', () => {
   const w = Number(wE1.value);
 
   if (!h || !w || h <= 0 || w <= 0) {
-    msg.className('error');
+    msg.className='error';
     msg.textContent = 'please enter valid height and weight';
     return;
   }
@@ -24,3 +24,4 @@ document.getElementById('calcBtn').addEventListener('click', () => {
   const bmi = w / (meters * meters);
   msg.textContent = `BMI:${bmi.toFixed(1)} (${category(bmi)})`;
 });
+
